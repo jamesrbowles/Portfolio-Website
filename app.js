@@ -24,3 +24,16 @@ function complete() {
     clearInterval(timer);
     timer = null;
 }
+
+const about = document.querySelector('.about-a')
+
+about.addEventListener('click', function(){
+    if (about.classList.contains('about-a')) {
+        about.classList.remove('about-a')
+        about.classList.add('underline')
+    } else {
+        about.classList.remove('underline')
+        about.classList.add('about-a')
+    }
+    
+})

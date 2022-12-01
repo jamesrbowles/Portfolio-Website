@@ -42,7 +42,6 @@
       float: right;
       text-align: center;
       padding: 0.8em;
-      text-decoration: none;
       font-size: 2rem;
       position: relative;
       top: 0;
@@ -55,6 +54,16 @@
       transition: 0.3s ease-in-out;
     }
     
+    .about-a {
+      text-decoration: none;
+    }
+    .projects-a {
+      text-decoration: none;
+    }
+    .contact-a {
+      text-decoration: none;
+    }
+
     /* Welcome section */
     
     #welcome-section {
@@ -244,4 +253,8 @@
     
     span.fade {
         opacity: 1;
+    }
+
+    .underline {
+      text-decoration: line-through;
     }
