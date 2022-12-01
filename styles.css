@@ -54,16 +54,10 @@
       transition: 0.3s ease-in-out;
     }
     
-    .about-a {
+    .link {
       text-decoration: none;
     }
-    .projects-a {
-      text-decoration: none;
-    }
-    .contact-a {
-      text-decoration: none;
-    }
-
+  
     /* Welcome section */
     
     #welcome-section {
@@ -244,7 +238,9 @@
     }
     }
     
-    /* JS Heading text */
+    /* JS */
+
+    /* Intro fancy text */
     
     span {
         transition: all 1s ease;
@@ -255,6 +251,8 @@
         opacity: 1;
     }
 
-    .underline {
+    /* Navbar links */
+
+    .strikethrough {
       text-decoration: line-through;
     }

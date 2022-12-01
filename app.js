@@ -1,3 +1,5 @@
+// Fancy intro text
+
 const text = document.querySelector('.fancy');
 const strText = text.textContent;
 const splitText = strText.split('');
@@ -25,15 +27,19 @@ function complete() {
     timer = null;
 }
 
-const about = document.querySelector('.about-a')
+// Line-through navbar links when clicked
 
-about.addEventListener('click', function(){
-    if (about.classList.contains('about-a')) {
-        about.classList.remove('about-a')
-        about.classList.add('underline')
-    } else {
-        about.classList.remove('underline')
-        about.classList.add('about-a')
-    }
-    
-})
+const link = document.querySelectorAll('.link')
+
+for (let i = 0; i < link.length; i++) {
+    link[i].addEventListener('click', function() {
+        link.forEach(lin => {
+            lin.classList.add('link')
+        })
+        link.forEach(lin => {
+            lin.classList.remove('strikethrough')
+        })
+        link[i].classList.remove('link')
+        link[i].classList.add('strikethrough')
+    })
+}
